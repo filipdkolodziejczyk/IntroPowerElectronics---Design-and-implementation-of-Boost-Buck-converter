@@ -13,7 +13,7 @@ That could mean converting power from a power plant for it to be used in househo
 INPUT FILTER -----> POWER STAGE ---->OUTPUT FILTER
 
 <p align="center">
-  <img src="assets/Power Electronics Basics And Tools For Design-2.jpg" alt="Encoder Circuit open" width="500"/>
+  <img src="assets/Power Electronics Basics And Tools For Design-2.jpg" alt=" Power Electronics Basics " width="500"/>
 </p>
 
 Filters help reduce the noise, the noise comes from high frequency switching from capacitors ( voltage ripple ) and inductors ( current ripple ).
@@ -31,7 +31,7 @@ What makes power converters better?
 Why are power converters needed? can i just use a potential divider to get the output voltage i need?
 
 <p align="center">
-  <img src="assets/Linear_Power_Supply.jpg" alt="Encoder Circuit open" width="500"/>
+  <img src="assets/Linear_Power_Supply.jpg" alt="Linear Power Supply" width="500"/>
 </p>
 
 from the diagram above, this type of set up is used with power transistors in IC circuits for low power application there could be some filtering but it isn't essential. 
@@ -45,7 +45,7 @@ Typical Application which CAN be used: brushed DC motors, heating elements
  
 
 <p align="center">
-  <img src="assets/PowerConverterPWM.jpg" alt="Encoder Circuit open" width="500"/>
+  <img src="assets/PowerConverterPWM.jpg" alt="PWM" width="500"/>
 </p>
 
 
@@ -53,7 +53,7 @@ if i had a heating element at the load and i needed to control the average volta
 
 
 <p align="center">
-  <img src="assets/PowerConverterLPF.jpg" alt="Encoder Circuit open" width="500"/>
+  <img src="assets/PowerConverterLPF.jpg" alt="LPF" width="500"/>
 </p>
 
 
