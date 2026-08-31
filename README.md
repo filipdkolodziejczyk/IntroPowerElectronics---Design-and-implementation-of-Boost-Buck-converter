@@ -28,11 +28,13 @@ What makes power converters better?
 
 ## Linear Power Supply 
 
-Why are power converters needed? can i just use a potential divider to get the output voltage i need?
+Why are power converters needed? can i just use a potential divider to get the output voltage i need?   
+
 
 <p align="center">
   <img src="assets/Linear_Power_Supply.jpg" alt="Linear Power Supply" width="500"/>
 </p>
+
 
 from the diagram above, this type of set up is used with power transistors in IC circuits for low power application there could be some filtering but it isn't essential. 
 
@@ -49,7 +51,7 @@ Typical Application which CAN be used: brushed DC motors, heating elements
 </p>
 
 
-if i had a heating element at the load and i needed to control the average voltage ( <Vx> ) i can just use the switch to pulsate between Vin & 0V. if the load was going to be a microprocessor then this would cause the load to break. This is called PWM moduation where i control the average voltage by controlling the fraction of the time that the switch is on compared to when the switch is off.
+if i had a heating element at the load and i needed to control the average voltage ( Vx_Average ) i can just use the switch to pulsate between Vin & 0V. if the load was going to be a microprocessor then this would cause the load to break. This is called PWM moduation where i control the average voltage by controlling the fraction of the time that the switch is on compared to when the switch is off.
 
 
 <p align="center">
@@ -57,4 +59,45 @@ if i had a heating element at the load and i needed to control the average volta
 </p>
 
 
-This type of adjustment will turn this pulsating voltage from a pwm to a v out which just has the DC component using A low pass filter (LPF) to attenuate the AC component (there is a ripple which is introduced but can be improved with a better cut of freqiency of the (LPF).
+This type of adjustment will turn this pulsating voltage from a pwm to a v out which just has the DC component using A low pass filter (LPF) to attenuate the AC component (there is a ripple which is introduced but can be improved with a better cut of freqiency of the LPF).
+
+
+
+ # Tools to Analyse Circuits
+ 
+ ## Root Mean Squared of a signal (RMS)
+ 
+ X(t) is some random signal with AC and DC components, im going to intergrate this X(t) which will give me the total energy of the signal but because the signal is sinusoidal i could be integrating a negative (-ve) and positive (+ve) which will give me Energy total = 0 which is wrong. this is where i get my rms value.
+ 
+ <p align="center">
+  <img src="assets/RMSPART1.jpg" alt="Signal as an Energy P1" width="500"/>
+</p>
+
+  <p align="center">
+  <img src="assets/RMSPART2.jpg" alt="Signal as an Energy P2" width="500"/>
+</p>
+ 
+ 
+  ## Orthonogality for a continous waveform
+  
+  -  This is relating calculus which i have done in my 2nd yr modules about vectors. if two vectors are at 90 degrees out of phase then they equal 0 is they are the same magnitude. 
+  
+ - if i have a sin * cos of the same frequency then the integration is also =  0 
+ 
+  - then the last one is a useful trig identity
+  
+  
+  <p align="center">
+  <img src="assets/Orthonogality.jpg" alt="Orthoganol" width="500"/>
+</p>
+
+
+ ## Average power going thorugh an inductor
+ 
+ this part will use a simple circuit and the defenition of RMS that i disscussed to find the average power going through an inductor
+ 
+   <p align="center">
+  <img src="assets/InductorAvgPower.jpg" alt="Inductor Power" width="500"/>
+</p>
+
+
