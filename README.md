@@ -87,11 +87,11 @@ This type of adjustment will turn this pulsating voltage from a pwm to a v out w
  
  - diode can't have a negative current becuase it will turn off
  
-   <p align="center">
-  <img src="assets/MethodOfAssumedStates1.jpg" alt=" MAS conditions" width="500"/>
+   <p align ="center">
+  <img src ="assets/MethodOfAssumedStates1.jpg" alt=" MAS conditions" width="500"/>
 </p>
  
- ##MAS
+  ##MAS
  
  - assume a state for each switch, guess
  
@@ -109,7 +109,7 @@ This type of adjustment will turn this pulsating voltage from a pwm to a v out w
   <img src="assets/MASMethod.jpg" alt=" MAS Method" width="500"/>
 </p>
  
- ## example of MAS
+  ## example of MAS
  
      <p align="center">
   <img src="assets/MASexample.jpg" alt=" MAS Example" width="500"/>
@@ -121,10 +121,10 @@ This type of adjustment will turn this pulsating voltage from a pwm to a v out w
  
  2. replace diode with open circuit 
  
- 3. evaluate the currents and voltages, Idiode = 0A open circuit, Vout = 0 open circuit Vdiode = Vs*sin(wt), this mean that the diode voltage is positive for when the diode is off which is a contradiction therefore for this simple circuit the diode is on.
+ 3. evaluate the currents and voltages, Idiode = 0A open circuit, Vout = 0 open circuit Vdiode = Vssin(wt), this mean that the diode voltage is positive for when the diode is off which is a contradiction therefore for this simple circuit the diode is on.
  
-      <p align="center">
-  <img src="assets/MASexamplecontinue.jpg" alt=" MAS Example continue" width="500"/> 
+    <p align="center">
+  <img src="assets/MASexamplecontinue.jpg" alt= "MAS Example continue" width="500"/> 
 </p>
  
  when the circuit crosses the point where the Vin becomes neagtive where the blue dot is if i continue to assume that this is a closed circuit what happens?
@@ -138,7 +138,7 @@ This type of adjustment will turn this pulsating voltage from a pwm to a v out w
  this means Vdiode and Idiode = 0 so the wavefrom just goes to 0 when the diode is off.
  
  
- ## Periodic Steay State (PSS)
+  ## Periodic Steay State (PSS)
  
  Usually power converters operate cyclicly eventually, when all the waveforms look the same after many cycles. Why? becuase when the circuit reaches this point then i can make assumptions about capacitors and inductors in the power converters to simplify my analysis.
  
