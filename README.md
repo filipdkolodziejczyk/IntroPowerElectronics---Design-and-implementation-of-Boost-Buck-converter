@@ -92,7 +92,7 @@ This type of adjustment will turn this pulsating voltage from a pwm to a v out w
 </p>
  
  
-  ##MAS
+  ## MAS
  
  - assume a state for each switch, guess
  
