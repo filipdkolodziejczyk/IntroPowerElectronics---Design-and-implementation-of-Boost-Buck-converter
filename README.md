@@ -91,6 +91,7 @@ This type of adjustment will turn this pulsating voltage from a pwm to a v out w
   <img src ="assets/MethodOfAssumedStates1.jpg" alt=" MAS conditions" width="500"/>
 </p>
  
+ 
   ##MAS
  
  - assume a state for each switch, guess
