@@ -65,6 +65,87 @@ This type of adjustment will turn this pulsating voltage from a pwm to a v out w
 
  # Tools to Analyse Circuits
  
+ ## Method of Assumed States (MAS) Time Domain Analysis
+ 
+ Circuit switching will be done by semicoductor devices, they can be controlled or external circuit events will dictate whetehr my circuit will turn on and off at a certain time. 
+ 
+ 
+ Circuit below, demonstates a sinusodial signal where it has a diode which acts like a switch ideal characteristic to simplify analysis usually diodes have exponential characteristics.
+ 
+  <p align="center">
+  <img src="assets/MethodOfAssumedStates0.jpg" alt=" Simple circuit MAS" width="500"/>
+</p>
+ 
+ ideal diode characteristic this below, if my switch is:
+ 
+ - ON  :  closed circuit my diode must have No potential difference across it, any current can flow 
+ - OFF :  open circuit my diode must have any -ve potential difference across it, no current flows
+ 
+ Diode is an uncontrolled switched what controls its switching? WHAT CAN THE DIODE NOT DO?
+ 
+ - diode can't have a positive potential difference because it will turn on
+ 
+ - diode can't have a negative current becuase it will turn off
+ 
+   <p align="center">
+  <img src="assets/MethodOfAssumedStates1.jpg" alt=" MAS conditions" width="500"/>
+</p>
+ 
+ ##MAS
+ 
+ - assume a state for each switch, guess
+ 
+ - replace open circuit if off and closed circuit if its on
+ 
+ - analyse the V's & I's in the circuit (this is just  alinear circuit problem with caps and inductors no exponentials)
+ 
+ - check if swith conditions are violated
+ 
+ - if not keep going in time , if violated make a new set of conditions and do it over again
+ 
+ below is a diagram visuallz describing what is happening
+ 
+    <p align="center">
+  <img src="assets/MASMethod.jpg" alt=" MAS Method" width="500"/>
+</p>
+ 
+ ## example of MAS
+ 
+     <p align="center">
+  <img src="assets/MASexample.jpg" alt=" MAS Example" width="500"/>
+</p>
+ 
+ What is the circuit doing at t = positive number ?
+ 
+ 1. assume the diode is off
+ 
+ 2. replace diode with open circuit 
+ 
+ 3. evaluate the currents and voltages, Idiode = 0A open circuit, Vout = 0 open circuit Vdiode = Vs*sin(wt), this mean that the diode voltage is positive for when the diode is off which is a contradiction therefore for this simple circuit the diode is on.
+ 
+      <p align="center">
+  <img src="assets/MASexamplecontinue.jpg" alt=" MAS Example continue" width="500"/> 
+</p>
+ 
+ when the circuit crosses the point where the Vin becomes neagtive where the blue dot is if i continue to assume that this is a closed circuit what happens?
+ 
+ 1. assume that the diode is still on
+ 
+ 2. diode is replaved with a closed circuit 
+ 
+ 3. analyse the currents and voltages Vdiode = whatever the supply is at the time which is negative. Idiode = Vin/R this will become a negative number, this is a contradiction becuase the current cant go negative when the diode acts like a closed circuit so the diode must be open here.
+ 
+ this means Vdiode and Idiode = 0 so the wavefrom just goes to 0 when the diode is off.
+ 
+ 
+ ## Periodic Steay State (PSS)
+ 
+ Usually power converters operate cyclicly eventually, when all the waveforms look the same after many cycles. Why? becuase when the circuit reaches this point then i can make assumptions about capacitors and inductors in the power converters to simplify my analysis.
+ 
+ 
+ 
+ 
+ 
  ## Root Mean Squared of a signal (RMS)
  
  X(t) is some random signal with AC and DC components, im going to intergrate this X(t) which will give me the total energy of the signal but because the signal is sinusoidal i could be integrating a negative (-ve) and positive (+ve) which will give me Energy total = 0 which is wrong. this is where i get my rms value.
