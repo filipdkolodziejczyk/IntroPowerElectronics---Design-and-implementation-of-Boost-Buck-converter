@@ -173,13 +173,13 @@ This type of adjustment will turn this pulsating voltage from a pwm to a v out w
  
  - an aside the extinction angle is the point where the diode turns off in a with just a resistor and an ac supply this is equal to pi = beta but when there is an inductor then beta is between 180 - 360 degrees.
  
-        <p align="center">
+    <p align="center">
   <img src="assets/AVGOutputVoltage.jpg" alt=" AVGOutputVoltage" width="500"/>
 </p>
  
  
  
-         <p align="center">
+<p align="center">
   <img src="assets/AVGOutputVoltageContinued.jpg" alt=" AVGOutputVoltageContinued" width="500"/>
 </p>
  
@@ -221,3 +221,31 @@ This type of adjustment will turn this pulsating voltage from a pwm to a v out w
  </p>
 
 
+   <p align="center">
+  <img src="assets/AveragePowerInductor0.jpg" alt="Inductor Power 0" width="500"/>
+ </p>
+
+
+   <p align="center">
+  <img src="assets/AveragePowerInductor1.jpg" alt="Inductor Power 1" width="500"/>
+ </p>
+
+
+   <p align="center">
+  <img src="assets/AveragePowerInductor2.jpg" alt="Inductor Power 2" width="500"/>
+ </p>
+
+
+   <p align="center">
+  <img src="assets/AveragePowerInductor3.jpg" alt="Inductor Power 3" width="500"/>
+ </p>
+
+
+   <p align="center">
+  <img src="assets/AveragePowerInductor4.jpg" alt="Inductor Power 4" width="500"/>
+ </p>
+
+
+   <p align="center">
+  <img src="assets/AveragePowerInductor5.jpg" alt="Inductor Power 5" width="500"/>
+ </p>
