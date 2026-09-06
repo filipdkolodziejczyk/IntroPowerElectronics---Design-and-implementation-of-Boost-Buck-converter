@@ -87,7 +87,7 @@ This type of adjustment will turn this pulsating voltage from a pwm to a v out w
  
  - diode can't have a negative current becuase it will turn off
  
-   <p align="center">
+  <p align="center">
   <img src="assets/MethodOfAssumedStates1.jpg" alt=" MAS conditions" width="500"/>
 </p>
  
