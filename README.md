@@ -141,9 +141,47 @@ This type of adjustment will turn this pulsating voltage from a pwm to a v out w
  
   ## Periodic Steay State (PSS)
  
- Usually power converters operate cyclicly eventually, when all the waveforms look the same after many cycles. Why? becuase when the circuit reaches this point then i can make assumptions about capacitors and inductors in the power converters to simplify my analysis.
+ Usually power converters operate cyclicly, this is when all the waveforms look the same after many cycles. Based on this, i can make assumptions on how my capacitors and inductors behave and simpligy my analysis.
+ 
+      <p align="center">
+  <img src="assets/PSS.jpg" alt=" PSS" width="500"/>
+</p>
  
  
+ ## PSS Example with a poor assumption
+ 
+ 
+       <p align="center">
+  <img src="assets/PSSassumptionbad.jpg" alt=" PSSassumptionbad" width="500"/>
+</p>
+  
+ i this example the current in the circuit gets smoothed out, but the assumption i made whilst analysing the circuit was bad becuase the diode is on all the time. 
+ 
+ why is it bad? well the indutor does nothing becuase it just a short circuit but it did tell mw that i made a mistake by making an aggressive assumption... 
+ The way the lecturer explaisn it if the average v out is negative and its assumed the inductor has some positive current going through it the current through the resistor must be negative some of the time hence the diode must have a negative current which isnt possible from our switch assumptions in the above tool that we discussed.
+ 
+ 
+ 
+ faulty assumptions:
+ 
+  - diode is always on, its not always on it turns off when the voltage across the diode hits 0 and then a bit after as the inductor discharges.
+  
+  - my circuit now doesnt act like a rectifier but as a AC RL circuit
+  
+  In a half wave rectifier with a resistive load the current stops as soon as the AC voltage crosses 0. During the positive cycle the inductor stores energy. when the voltage at the supply goes negative the inductor wants to force the diode to keep being forward biased so it reverses its own polarity. the volatge at the load becomes negative during becuase diode is still on whislts Vsupply is negative
+ 
+ 
+ - an aside the extinction angle is the point where the diode turns off in a with just a resistor and an ac supply this is equal to pi = beta but when there is an inductor then beta is between 180 - 360 degrees.
+ 
+        <p align="center">
+  <img src="assets/AVGOutputVoltage.jpg" alt=" AVGOutputVoltage" width="500"/>
+</p>
+ 
+ 
+ 
+         <p align="center">
+  <img src="assets/AVGOutputVoltageContinued.jpg" alt=" AVGOutputVoltageContinued" width="500"/>
+</p>
  
  
  
