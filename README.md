@@ -218,6 +218,6 @@ This type of adjustment will turn this pulsating voltage from a pwm to a v out w
  
    <p align="center">
   <img src="assets/InductorAvgPower.jpg" alt="Inductor Power" width="500"/>
-</p>
+ </p>
 
 
