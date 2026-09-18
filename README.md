@@ -212,9 +212,12 @@ This type of adjustment will turn this pulsating voltage from a pwm to a v out w
 </p>
 
 
- ## Average power going thorugh an inductor
+ ## Average power going thorugh an inductor & power factor utilisation
  
- this part will use a simple circuit and the defenition of RMS that i disscussed to find the average power going through an inductor
+  - this part will use a simple circuit and the defenition of RMS that i disscussed to find the average power going through an inductor
+  
+  - part of this disscuses the maths behind what power factor is energy companies dont want you to use their grid capacity by using apparent power using the inductor
+  therefore they will charge for the capacity that you use not just the real power that is dissipated companies are checked via their power factors.
  
    <p align="center">
   <img src="assets/InductorAvgPower.jpg" alt="Inductor Power" width="500"/>
@@ -245,7 +248,14 @@ This type of adjustment will turn this pulsating voltage from a pwm to a v out w
   <img src="assets/AveragePowerInductor4.jpg" alt="Inductor Power 4" width="500"/>
  </p>
 
-
-   <p align="center">
-  <img src="assets/AveragePowerInductor5.jpg" alt="Inductor Power 5" width="500"/>
- </p>
+ 
+  ## DC to DC power conversion
+  
+  what analysis do i use?
+  
+  KCL = current at a node summs to 0 
+  KVL = voltages around terminal in a loop adds to 0 
+  
+  it can be slightly adjusted so that i describe average values so...
+  
+  
