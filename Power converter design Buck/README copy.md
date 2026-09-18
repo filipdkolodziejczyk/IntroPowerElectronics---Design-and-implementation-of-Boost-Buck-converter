@@ -24,7 +24,7 @@ Full Load Iout,Max = 2.0A
   
   
 <p align="center">
-  <img src="Power converter design Buck/assets2/StatesBuck.jpg" alt=" Circuit States Buck " width="500"/>
+  <img src="assets2/StatesBuck.jpg" alt=" Circuit States Buck " width="500"/>
 </p>
   
   
